@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(barrelmaker.dev dotfiles.barrelmaker.dev friendbot.barrelmaker.dev)
+domains=(barrelmaker.dev dotfiles.barrelmaker.dev friendbot.barrelmaker.dev grocy.barrelmaker.dev)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="nolancooper97@gmail.com"
@@ -35,6 +35,8 @@ docker-compose run --rm --entrypoint "\
     -keyout '$path/privkey.pem' \
     -out '$path/fullchain.pem' \
     -subj '/CN=localhost'" certbot
+docker-compose run --rm --entrypoint "\
+  cp '${path}/fullchain.pem' '${path}/chain.pem'" certbot
 echo
 
 
