@@ -10,7 +10,7 @@ services:
       - ./data/nginx/servers:/etc/nginx/conf.d
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
-      - ${WEBSITE_DIR}:/var/www/website
+      - ./data/website:/var/www/website
     ports:
       - "80:80"
       - "443:443"
