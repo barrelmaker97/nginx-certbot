@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(barrelmaker.dev dotfiles.barrelmaker.dev friendbot.barrelmaker.dev niucraft2.barrelmaker.dev motocraft.barrelmaker.dev jellyfin.barrelmaker.dev)
+domains=(barrelmaker.dev dotfiles.barrelmaker.dev friendbot.barrelmaker.dev niucraft2.barrelmaker.dev motocraft.barrelmaker.dev jellyfin.barrelmaker.dev grafana.barrelmaker.dev)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="nolancooper97@gmail.com"
