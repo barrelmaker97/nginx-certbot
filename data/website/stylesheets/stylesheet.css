@@ -7,11 +7,11 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #282828;
-	background-color: #fbf1c7;
+	color: #fbf1c7;
+	background-color: #282828;
 }
 .page-header {
-	color: #ffffff;
+	color: white;
 	text-align: center;
 	background-image: linear-gradient(120deg, #076678, #427b58, #79740e);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -225,7 +225,7 @@ h1 {
 .site-footer {
 	padding-top: 2rem;
 	margin-top: 2rem;
-	border-top: solid 1px #d5c4a1;
+	border-top: solid 1px #427b58;
 	text-align: center;
 }
 .site-footer-credits {
