@@ -14,7 +14,7 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 a {
-	color: #458588;
+	color: #83a598;
 	text-decoration: none;
 }
 a:hover {
@@ -30,7 +30,6 @@ h1 {
 .tagline {
 	margin-bottom: 2rem;
 	font-weight: normal;
-	opacity: 0.7;
 }
 .main-content :first-child {
 	margin-top: 0;
@@ -42,7 +41,7 @@ h1 {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	font-weight: normal;
-	color: #8f3f71;
+	color: #8ec07c;
 }
 .site-footer {
 	padding-top: 2rem;
@@ -51,7 +50,7 @@ h1 {
 	text-align: center;
 }
 .site-footer-credits {
-	color: #665c54;
+	color: #bdae93;
 }
 
 @media screen and (min-width: 64em) {
