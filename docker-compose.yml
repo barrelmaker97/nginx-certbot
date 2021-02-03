@@ -11,10 +11,11 @@ services:
       - ./data/certbot/conf:/etc/letsencrypt:ro
       - ./data/certbot/www:/var/www/certbot:ro
       - ./data/website:/var/www/website:ro
+      - ./nginx-script.sh:/nginx-script.sh:ro
     ports:
       - "80:80"
       - "443:443"
-    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    command: "/nginx-script.sh"
   certbot:
     image: certbot/certbot:latest
     container_name: certbot
