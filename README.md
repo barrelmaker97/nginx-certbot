@@ -17,7 +17,7 @@ application.
     - Add your domains and email addresses to init-letsencrypt.sh
     - Modify nginx configuration at `data/nginx/nginx.conf` to suit your needs (Security Headers, Logging, etc.)
     - Add as many servers as you would like in `data/nginx/servers`
-    - Setup your static site in data/website (if you choose to keep that server)
+    - Setup your static site by replacing the volume in the docker-compose (if you choose to keep that server)
 
 4. Run the init script:
 
